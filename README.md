@@ -1,19 +1,18 @@
 # Assignment 12: Simple Blockchain
 
 A blockchain is a popular data structure that is used in many applications, most notably in the
-world of cryptocurrencies. A blockchain is a data structure that consists of blocks, where each
-block contains data. Each block also contains a hash of the previous block, which creates a chain of
-blocks. This is a simple way to ensure that the data in the blocks is not tampered with. If you
-change the data in one block, the hash of that block will change, and it will no longer match the
-hash stored in the next block. Thus, if you want to successfully tamper with the data in a block,
-you need to tamper with all the blocks that come after it, which can be a computationally
-challenging task.
+world of cryptocurrencies. A blockchain consists of blocks, where each block contains data. Each
+block also contains a hash of the previous block, which creates a chain of blocks. This is a simple
+way to ensure that the data in the blocks is not tampered with. If you change the data in one block,
+the hash of that block will change, and it will no longer match the hash stored in the next block.
+Thus, if you want to successfully tamper with the data in a block, you need to tamper with all the
+blocks that come after it, which can be a computationally challenging task.
 
 To make it even more challenging, a typical blockchain requires that newly-generated blocks meet
 certain conditions. For example, Bitcoin, a popular cryptocurrency, has a *target hash* and new
 blocks must have a hash that is less than or equal to the target. To allow this, each block also
 contains a *nonce*, which is a number that one can vary to create a hash that satisfies the
-condition. As you can imagine, it is computationally challenging to find a such nonce. Thus, the
+condition. As you can imagine, it is computationally challenging to find such a nonce. Thus, the
 process of finding a correct nonce has a fitting name, *mining*, analogous to mining for precious
 metals such as gold. One needs to try a very large number of different nonces to find the one that
 creates a hash that satisfies the condition. In Bitcoin, miners are rewarded with new Bitcoins for
